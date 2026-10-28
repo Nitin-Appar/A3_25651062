@@ -455,4 +455,11 @@ public sealed class LevelGenerator : MonoBehaviour
             FitCamera();
         }
     }
+    public int[,] GetLevelMap()
+    {
+        return (int[,])levelMap.Clone();
+    }
+
 }
+
+
